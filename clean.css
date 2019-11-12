@@ -1,0 +1,471 @@
+body {
+  margin: 0;
+  background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* FRONT PAGE */
+
+/* .front-page {
+    position: relative;
+    background: url('images/cover.jpg') no-repeat center center/100%; 
+    background-attachment: fixed;
+    display: flex;
+} */
+
+
+/* BLOG TITLE  */
+/* 
+.blog-heading {
+    height:100vh;
+    width: 100%;
+    font-family: 'EB Garamond', serif;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.blog-title {
+    text-shadow: 0px 0px 9px rgba(178,160,125,1);
+    font-size: 4rem;
+    font-weight: 500;
+    text-transform: lowercase;
+    letter-spacing: 20px;
+    opacity: 0.7;
+    align-self: end;
+    padding-left: 3rem;
+}
+
+.blog-subtitle {
+    padding-top: 25px;
+    text-shadow: 0px 0px 9px rgba(178,160,125,0.92);
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: italic;
+    padding-left: 3rem;
+    opacity: 0.7;
+}
+
+.blog-links {
+    padding-top: 25px;
+    padding-left: 250px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: white;
+    opacity: 0.7;
+    text-transform: lowercase;
+    justify-self: center;
+}
+
+.blog-links ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+
+.blog-link-item {
+    cursor: pointer;
+    margin: 0;
+    width: max-content;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.blog-link-item:hover {
+    color: burlywood;
+    opacity: 1;
+} */
+
+/* FEATURE */
+
+.feature {
+  position: relative;
+  width: 1000px;
+  min-width: 1000px;
+  color: black;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  overflow: hidden;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 500px auto;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.feature-image {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.feature:hover {
+    /* transform: scale(1.01); */
+}
+
+.feature:hover .feature-text h1 {
+    color: maroon;
+    opacity: 0.5;
+    /* text-decoration: underline; */
+}
+
+.feature:hover .feature-image {
+    filter: invert(0.1);
+}
+
+.feature-text {
+   font-family: 'Roboto', serif;
+   padding-left: 2em;
+  /* opacity: 0.84; */
+    
+}
+
+.feature-text h1 {
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 80%;
+    margin: 0;
+    -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.feature-text h2 {
+    font-size: 1.3em;
+    font-weight: 300;
+    margin: 0;
+    margin-top: 1em;
+}
+
+.feature-text h3 {
+    font-size: 1.6em;
+    font-weight: 100;
+    color: grey;
+    margin: 0;
+    margin-top: 1em;
+}
+
+@media all and (max-width: 1000px) {
+    
+
+    .feature {
+        position: relative;
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        cursor: pointer;
+        display: block;
+    }
+
+    .feature-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .feature-text h1 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .feature-text h2 {
+        font-size: 1rem;
+        font-weight: 300;
+        margin-top: 1em;
+    }
+
+    .feature-text h3 {
+        font-size: 1rem;
+        font-weight: 100;
+        margin-top: 1em;
+    }
+
+}
+
+/* ARTICLES */
+
+.articles-header {
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.articles-header-text {
+    position: relative;
+    width: 80%;
+    font-family: 'EB Garamond', sans-serif;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 2rem;
+/* quotes: "\201C""\201D""\2018""\2019"; */
+}
+
+blockquote:before { 
+    content: open-quote;
+    font-size: 30rem;
+    opacity: 0.1; 
+    color: black;
+    position: absolute;
+    top: -60%;
+    left: -10%;
+}
+
+blockquote cite {
+    font-size: 2rem;
+    font-style: normal;
+    display: block;
+    margin-top: 1rem;
+    margin-left: 50rem;
+}
+
+blockquote cite:before {
+    content: "\2014 \2009";
+}
+
+ 
+hr.line-style {
+    border: none;
+    border-top: 0.5px solid black;
+    width: 80%; 
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.articles-container {
+}
+
+.articles {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    grid-column-gap: 1%;
+    justify-content: center;
+    overflow: hidden;
+    /* border: 1px solid black; */
+}
+
+.article {
+    width: 100%;
+    height: 95%;
+    display: block;
+    cursor: pointer;  
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.article-image-container {
+    width: 100%;
+    /* max-height: 300px; */
+    /* height: 300px; */
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.article-image {
+    width: 100%;
+    /* max-height: 300px; */
+    /* height: 100%; */
+    overflow: hidden;
+}
+
+.article-image img {
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.article-text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 90%;
+    margin: auto;
+    /* color: white; */
+}
+
+.article-text h1 {
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.article-text h2 {
+    font-family: 'Roboto';
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.article-text h3 {
+    font-family: 'Roboto';
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: grey;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+
+.article:hover .article-image img {
+    /* transform: scale(1.02); */
+    filter: invert(0.1);
+}
+
+
+.article:hover .article-text h1 {
+    color: maroon;
+    opacity: 0.5;
+}
+
+
+@media all and (max-width: 1200px) {
+
+    .articles {
+    grid-template-columns: repeat(2, 450px);
+    }
+
+    /*     
+    .articles {
+        margin: 0;
+        display: block;
+        padding: 0;
+    }
+   .article {
+        min-height: 400px;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 420px auto;
+    }
+
+    .article-image {
+        width: 400px;
+        height: 400px;
+    }
+*/
+    .article-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .article-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .article-text h3 {
+        font-size: 1.1rem;
+    } 
+
+}
+
+@media all and (max-width: 950px) {
+
+    .articles {
+        grid-template-columns: repeat(1, 90%);
+    }
+
+    .article {
+    width: 100%;
+    /* height: 95%; */
+    display: grid;
+    grid-template-columns: 40% auto;
+    /* justify-content: start; */
+    }
+
+    /*     
+    .articles {
+        margin: 0;
+        display: block;
+        padding: 0;
+    }
+   .article {
+        min-height: 400px;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 420px auto;
+    }
+
+    .article-image {
+        width: 400px;
+        height: 400px;
+    }
+*/
+    .article-text {
+        width: 100%;
+        padding: 0;
+        padding-left: 10px;
+        margin: 0;
+    }
+    .article-text h1 {
+        font-size: 2rem;
+        line-height: 85%;
+    }
+
+    .article-text h2 {
+        font-size: 1rem;
+    }
+
+    .article-text h3 {
+        font-size: 0.9rem;
+    } 
+
+}
+
+@media all and (max-width: 720px) {
+    
+    .articles-header { 
+        display:none;
+    }
+
+    .articles {
+        margin: 0;
+        display: block;
+        padding: 0;
+    }
+
+    .article {
+        /* margin: 0; */
+        /* padding: 0; */
+        display: block;
+    }
+
+    .article-image {
+        width: 100vw;
+        /* height: 100%; */
+    }
+
+    .article-text {
+        padding: 20px;
+    }
+    .article-text h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .article-text h2 {
+        font-size: 1.2rem;
+        font-weight: 300;
+        margin-top: 1rem;
+    }
+
+    .article-text h3 {
+        font-size: 1rem;
+        font-weight: 300;
+        margin-top: 1rem;
+    }
+
+
+    .article:hover {
+        transform: scale(1);
+    }
+}
