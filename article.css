@@ -340,3 +340,13 @@ blockquote cite:before {
 }
 
 }
+
+
+@media (max-width: 720px) {
+  p { 
+    font-size: 1.275rem;
+    font-weight: 300;
+    margin: 0;
+    line-height: 1.8rem; 
+  }
+{

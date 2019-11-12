@@ -473,7 +473,8 @@ hr.line-style {
 
     .article {
         display: block;
-        border-bottom: 1px solid grey;
+        /* border-bottom: 1px solid grey;
+        margin-bottom: 10px; */
     }
 
     .article-image {
