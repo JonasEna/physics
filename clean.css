@@ -125,7 +125,8 @@ a {
    font-family: 'Roboto', serif;
    padding-left: 2em;
   /* opacity: 0.84; */
-    
+  position: relative;
+  width: 100vw;
 }
 
 .feature-text h1 {
@@ -192,16 +193,20 @@ a {
 
     .feature {
         position: relative;
-        width: 100vw;
+        width: 100px;
         margin: auto;
         overflow: hidden;
         cursor: pointer;
-        display: block;
+        display: none;
     }
 
     .feature-image {
         width: 100vw;
         height: 100%;
+    }
+
+    .feature-text {
+
     }
 
     .feature-text h1 {
@@ -468,6 +473,7 @@ hr.line-style {
 
     .article {
         display: block;
+        border-bottom: 1px solid grey;
     }
 
     .article-image {
