@@ -345,6 +345,13 @@ blockquote cite:before {
 @media (max-width: 640px) {
   
   
+  .first-character {
+    font-size: 4.1rem;
+    line-height: 2.5rem;
+    padding-top: 7px;
+    padding-right: 8px;
+  }
+
   .normal-image {
     width: 100vw;
     padding: 0;
