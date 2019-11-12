@@ -30,22 +30,22 @@ body {
 }
 
 .article-header-text h1 {
-  font-size: 42px;
-  font-weight: 300;
+  font-size: 1.5rem;
+  font-weight: 400;
   margin: 0;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 .article-header-text h2 {
-  font-size: 24px;
-  font-weight: 100;
-  margin-top: 1rem;
-
+  font-size: 1.3rem;
+  font-weight: 300;
+  /* line-height: 24px; */
 }
 
 .article-header-text h3 {
-  font-size: 20px;
-  font-weight: 100;
-  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 
@@ -360,7 +360,10 @@ blockquote cite:before {
     width: 100vw;
   }
 
-  
+  blockquote {
+    font-weight: 500;
+  }
+
   .article-header-text {
     position: absolute;
     bottom: 0%;
