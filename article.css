@@ -344,6 +344,28 @@ blockquote cite:before {
 
 @media (max-width: 640px) {
   
+  
+  .normal-image {
+    width: 100vw;
+    padding: 0;
+  }
+
+  .full-image {
+    width: 100vw;
+  }
+
+  
+  .article-header-text {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    text-align: left;
+  }
+
+  .ingress {
+    font-size: 1.5rem;
+  }
+
   p { 
     font-size: 1.275rem;
     font-weight: 300;
