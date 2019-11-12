@@ -473,6 +473,7 @@ hr.line-style {
 
     .article-image {
         width: 90vw;
+        max-height: 300px;
     }
 
     .article-text {
@@ -497,24 +498,24 @@ hr.line-style {
 
     .article-text h3 {
         font-size: 0.8rem;
-        font-weight: 100;
-        margin-top: 0.5rem;
+        font-weight: 300;
+        margin-top: 0.8rem;
         position: relative;
     }
     .article-text h3 span {
-    background-color: white;
-    padding-right: 10px;
-}
+        background-color: white;
+        padding-right: 10px;
+    }
 
     .article-text h3:after {
-    content:"";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 0.5em;
-    border-top: 1px solid lightgray;
-    z-index: -1;
+        content:"";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 0.5em;
+        border-top: 1px solid lightgray;
+        z-index: -1;
     }
 
 }
