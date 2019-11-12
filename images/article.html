@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Artikel template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="stylesheet" type="text/css" href="article.css">
+  <link rel="stylesheet" type="text/css" href="menu.css">
+  <link rel="stylesheet" type="text/css" href="footer.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Monofett&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i&display=swap"
+    rel="stylesheet">
+
+  <script src="src/about.js"></script>
+  <script src="src/article-click.js"></script>
+  <script src="src/menu.js"></script>
+
+  <style>
+    .article-header-img {
+      /* position: relative; */
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1)), url('images/jupiter.jpg');
+      padding-top: 100vh;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      transform: scaleX(-1);
+    }
+
+    /* Something not right with padding-top */
+  </style>
+</head>
+
+<body>
+
+  <!-- Att göra: 
+fixa twitter-loggan, 
+kolla allt i stor size, 
+fixa bilder, 
+responsive header, 
+gör headern snyggare -->
+  <div id="header">
+    <div class="float-right">
+      <div class="hamburger" onclick="clickMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="about-screen-position">
+    <div id="about-screen">
+      <div class="about-text">
+        <!-- <p style="color: white">Vad är skillnaden mellan kosmologi och astrofysik?</p>
+        <p>
+          Kosmologer studerar universum som helhet, medan astrofysiker studerar objekt i universum. Jag är mer
+          kosmolog än astrofysiker.
+          <br><br>
+          Jag disputerade vid Stockholms Universitet 2015, och har arbetat som teleskopassistent vid det svenska
+          solteleskopet i La Palma och konstruerat ett observatorium på Sydpolen.
+          <br><br>
+          Här skriver jag om mina tankar kring natur och vetenskap, och berättar om arbetet med en bok om svarta
+          hål.
+          <br><br>
+        </p> -->
+        <ul>
+          <a href="clean.html">
+            <li class="list-item">Hem</li>
+          </a>
+          <li class="list-item">Om</li>
+          <li class="list-item">Kontakt</li>
+          <li class="list-item">Foton</li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <section id="cover">
+    <div class="article-header">
+      <div class="article-header-img">
+
+      </div>
+      <div class="article-header-text">
+        <h1>Artikelns namn</h1>
+        <h2>En tysk astronom skådar ner i avgrunden i Vosges</h2>
+        <h3>Av Jonas Enander | 6 oktober 2019</h3>
+      </div>
+
+    </div>
+  </section>
+  <!-- <div class="main-header">
+    <div class="main-header-links">
+      <button onclick="about()" class="button" id="about-button">?</button>
+    </div>
+  </div> -->
+  <section class="main-text">
+
+    <div class="ingress">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis
+      aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      <div id="share-buttons">
+        <div class="share-button">
+          <a href="https://twitter.com/share?url=dodensberg.html" target="_blank">
+            <img src="images/twitter.png" alt="Twitter" />
+          </a>
+        </div>
+        <div class="share-button">
+          <a href="http://www.facebook.com/sharer.php?u=dodensberg.html" target="_blank">
+            <img src="images/facebook.png" alt="Facebook" />
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="article-text">
+      <p>
+        <span class="first-character">D</span>et egentligen namnet på berget är Hartmannsweilerkopf. Berget ligger i
+        Vosgesregionen i östra Frankrike, nära
+        gränsen till Tyskland.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+        ea commodo consequat.
+        <br><br>
+        <ul>
+          <li>
+            <p>Fixa texthierarkiernas rem, ha en standard</p>
+          </li>
+          <li>
+            <p>Ändra textstorlek för mobil</p>
+          </li>
+          <li>
+            <p>Ha scrolling effekt för texten</p>
+          </li>
+          <li>
+            <p>Fixa hamburgarens placering och tag bort när mobil screen</p>
+          </li>
+          <li>
+            <p>Ken Burns i frontbilden</p>
+          </li>
+          <li>
+            <p>Jump to top button</p>
+          </li>
+        </ul>
+        <br><br>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+          anim id est laborum.
+          <br><br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+          anim id est laborum.
+          <br><br>
+        </p>
+
+    </div>
+  </section>
+  <div class="quote">
+    <blockquote>Jag har upptäckt något märkligt
+      i ekvationerna, och jag undrar om Einstein
+      också
+      har sett
+      det.
+      <!-- <cite>Karl Schwarzschild i ett brev till sin fru Elsa från sjukhuset.</cite> -->
+    </blockquote>
+  </div>
+
+  <div class="normal-image">
+    <img src='images/Schwarzschild_portrait.jpg' width=100%>
+
+  </div>
+
+  <!-- <div class="image-grid">
+    <div class="image-grid-left">
+      <img src='images/Schwarzschild_portrait.jpg' width=100%>
+    </div>
+    <div class="image-grid-right">
+      <blockquote>Jag har upptäckt något märkligt
+        i ekvationerna, och jag undrar om Einstein
+        också
+        har sett
+        det.
+        <cite>Karl Schwarzschild i ett brev till sin fru Elsa från sjukhuset.</cite>
+      </blockquote>
+    </div>
+  </div> -->
+
+  <section class="main-text">
+    <div class="ingress"></div>
+    <div class="article-text">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+        ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat
+        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum.
+      </p>
+    </div>
+  </section>
+
+  <section class="main-text">
+    <div class="paragraph-header">
+      Bergsbestigaren som gick vilse
+    </div>
+    <div class="article-text">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+        ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat
+        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum.
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+        ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat
+        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum.
+      </p>
+    </div>
+  </section>
+
+  <div class="full-image">
+    <img src="images/storchennest-feste-ratz.jpg" width=100%>
+    <div class="image-caption">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+      dolore magna aliqua.
+    </div>
+  </div>
+
+  <section class="main-text">
+
+    <div class="article-text">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+        ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat
+        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum.
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+        ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat
+        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum.
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+        ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat
+        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum.
+      </p>
+    </div>
+  </section>
+
+  <div class="float-middle">
+    <div class="read-more">
+      <a class="read-more-button" href="clean.html" rel="nofollow noopener">
+        Läs mer</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    Jag har inga kakor, jag är bara glad att du är här.
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+
+/* HAMBURGER MENU */
+
+#header {
+    /* margin: 0 auto; */
+    position: relative;
+    /* width:95vw; */
+    margin-right: 75px;
+}
+.float-right {
+    float: right;
+    /* margin-right: -50px; */
+}
+
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+  position: fixed;
+  z-index: 100;
+  margin-top: 20px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+  opacity: 1;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+  /* background-color: white; */
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+  /* background-color: white; */
+
+}
+
+/* SCREEN */
+
+#about-screen-position {
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  width: 0px;
+  padding: 0;
+  transition: right 0.2s ease-out;
+  -webkit-transition: right 0.2s ease-in-out;
+
+}
+
+#about-screen {
+  position: fixed;
+  z-index: 10;
+  background-color: white;
+  /* box-shadow: -10px 0px 1px 0.5px #aaaaaa; */
+  border-left: 1px solid grey;
+  width: 100%;
+  height: 100%;
+  opacity: 0.95;
+}
+
+.about-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;   
+  font-weight: 300;
+  color: black;
+  margin-top: 90px;
+  text-align: left;
+  text-transform: lowercase;
+}
+
+.about-text ul {
+  padding: 0;
+}
+
+.about-text a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list-item {
+  list-style-type:none;
+  width: 100%;
+  padding: 1rem;
+  padding-left: 4rem;
+  transition:  0.3s ease-in-out;
+  -webkit-transition:  0.3s ease-in-out;
+  cursor: pointer;
+  opacity: 0.84;
+  /* filter: brightness(30%); */
+
+}
+
+.list-item:hover {
+  /* background-color: rgba(0, 0, 0, 0.03); */
+  opacity: 0.6;
+  color: burlywood;
+  /* filter: brightness(5); */
+}
