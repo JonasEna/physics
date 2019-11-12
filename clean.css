@@ -467,18 +467,16 @@ hr.line-style {
     }
 
     .article {
-        /* margin: 0; */
-        /* padding: 0; */
         display: block;
     }
 
     .article-image {
         width: 100vw;
-        /* height: 100%; */
     }
 
     .article-text {
         padding: 20px;
+        width: 90%;
     }
 
     .article-text h1 {
@@ -495,7 +493,7 @@ hr.line-style {
     }
 
     .article-text h3 {
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-weight: 300;
         margin-top: 1rem;
     }
