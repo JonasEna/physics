@@ -351,4 +351,8 @@ blockquote cite:before {
     line-height: 1.8rem; 
   }
 
+  .image-caption {
+    width: 90%;
+    font-size: 1rem;
+  }
 }
