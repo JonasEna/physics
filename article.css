@@ -363,8 +363,9 @@ blockquote cite:before {
   
   .article-header-text {
     position: absolute;
-    bottom: 5%;
+    bottom: 0%;
     left: 5%;
+    /* width: 90%; */
     text-align: left;
   }
 
